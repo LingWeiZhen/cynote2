@@ -1,0 +1,18 @@
+(dp1
+S'id'
+p2
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p3
+sS'archived'
+p4
+S'CHAR(1)'
+p5
+sS'description'
+p6
+S'TEXT'
+p7
+sS'name'
+p8
+S'CHAR(32)'
+p9
+s.

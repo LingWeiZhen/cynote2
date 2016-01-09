@@ -1,0 +1,22 @@
+(dp1
+S'timestamp'
+p2
+S'CHAR(32)'
+p3
+sS'your_name'
+p4
+S'CHAR(32)'
+p5
+sS'id'
+p6
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p7
+sS'your_email'
+p8
+S'CHAR(32)'
+p9
+sS'your_message'
+p10
+S'TEXT'
+p11
+s.

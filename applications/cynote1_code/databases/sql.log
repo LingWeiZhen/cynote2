@@ -1,0 +1,100 @@
+timestamp: 2016-01-09T09:59:22.021897
+CREATE TABLE notebook(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    description TEXT,
+    archived CHAR(1)
+);
+success!
+timestamp: 2016-01-09T09:59:22.068134
+CREATE TABLE entry(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    author CHAR(512),
+    file CHAR(512),
+    filename CHAR(512),
+    keywords CHAR(256),
+    notebook INTEGER REFERENCES notebook (id) ON DELETE CASCADE  ,
+    datetime TIMESTAMP,
+    description TEXT
+);
+success!
+timestamp: 2016-01-09T09:59:22.110242
+CREATE TABLE comment(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    author CHAR(512),
+    file CHAR(512),
+    filename CHAR(512),
+    body TEXT,
+    datetime TIMESTAMP,
+    entry_id INTEGER REFERENCES entry (id) ON DELETE CASCADE  
+);
+success!
+timestamp: 2016-01-09T09:59:22.152861
+CREATE TABLE result(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    author CHAR(512),
+    testresult TEXT
+);
+success!
+timestamp: 2016-01-09T09:59:22.254749
+CREATE TABLE log(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    event TEXT,
+    user CHAR(512),
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2016-01-09T09:59:22.373935
+CREATE TABLE user_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    event TEXT,
+    user CHAR(512),
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2016-01-09T09:59:22.476889
+CREATE TABLE entry_hash(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    eid CHAR(512),
+    edatetime CHAR(512),
+    etitle TEXT,
+    hashed TIMESTAMP,
+    ehash TEXT
+);
+success!
+timestamp: 2016-01-09T09:59:22.596553
+CREATE TABLE comment_hash(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cid CHAR(512),
+    cdatetime CHAR(512),
+    eid CHAR(512),
+    hashed TIMESTAMP,
+    chash TEXT
+);
+success!
+timestamp: 2016-01-09T09:59:22.709495
+CREATE TABLE message(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    your_name CHAR(512),
+    your_email CHAR(512),
+    your_message TEXT,
+    timestamp CHAR(512)
+);
+success!
+timestamp: 2016-01-09T09:59:22.847409
+CREATE TABLE recipient(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name CHAR(512),
+    email CHAR(512)
+);
+success!
+timestamp: 2016-01-09T09:59:22.989959
+CREATE TABLE user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username CHAR(512) UNIQUE,
+    password CHAR(512),
+    aging INTEGER,
+    authorized CHAR(1)
+);
+success!

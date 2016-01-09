@@ -1,0 +1,22 @@
+(dp1
+S'username'
+p2
+S'CHAR(32) UNIQUE'
+p3
+sS'aging'
+p4
+S'INTEGER'
+p5
+sS'password'
+p6
+S'CHAR(32)'
+p7
+sS'id'
+p8
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p9
+sS'authorized'
+p10
+S'CHAR(1)'
+p11
+s.
