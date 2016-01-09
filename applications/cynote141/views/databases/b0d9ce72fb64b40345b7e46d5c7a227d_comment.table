@@ -1,0 +1,30 @@
+(dp1
+S'body'
+p2
+S'TEXT'
+p3
+sS'author'
+p4
+S'CHAR(32)'
+p5
+sS'datetime'
+p6
+S'TIMESTAMP'
+p7
+sS'entry_id'
+p8
+S'REFERENCES entry(id) ON DELETE CASCADE'
+p9
+sS'file'
+p10
+S'CHAR(128)'
+p11
+sS'filename'
+p12
+S'CHAR(32)'
+p13
+sS'id'
+p14
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p15
+s.
