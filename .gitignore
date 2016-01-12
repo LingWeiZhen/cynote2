@@ -1,3 +1,7 @@
+**/databases
+**/sessions
+**/errors
+
 databases/**
 sessions/**
 errors/**
