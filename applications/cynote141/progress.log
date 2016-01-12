@@ -1,2 +1,5 @@
 [2016-01-09 10:14:07] START
 [2016-01-09 10:14:07] EDIT cynote141/controllers/default.py: -3
+[2016-01-12 06:41:00] DELETE cynote141/views/account/log_in.html: -8
+[2016-01-12 06:50:32] DELETE cynote141/views/account/new_account.html: -3
+[2016-01-12 07:19:40] DELETE cynote141/views/account/logged.html: -4

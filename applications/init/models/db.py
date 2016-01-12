@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+'''
 #########################################################################
 ## This scaffolding model makes your app work on Google App Engine too
 ## File is released under public domain and you can use without limitations
@@ -90,3 +90,4 @@ auth.settings.reset_password_requires_verification = True
 
 ## after defining tables, uncomment below to enable auditing
 # auth.enable_record_versioning(db)
+'''
